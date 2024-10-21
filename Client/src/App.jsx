@@ -18,12 +18,22 @@ const handleSubmit = () => {
 const handleGetUsers = () => {
   axios({
     method: 'get',
-    url: 'http://localhost:3002/getUsers',
+    url: 'http://localhost:3002/GetUsers',
   })
   .then((res) => {
     console.log('res=', res)
   })
 }
+
+// const handleDeleteUsers = () => {
+//   axios({
+//     method: 'delete',
+//     url: 'http://localhost:3002/DeleteUsers'
+//   })
+//   .then((res) => {
+//     console.log('res=', res)
+//   })
+// }
 
 
 function App() {
@@ -34,7 +44,7 @@ function App() {
     {/* { input onchange handlesubmit api axios request to /create } */}
 
     <button onClick={handleSubmit}>Submit</button>
-    <button>Delete</button>
+    <button onClick={handleDeleteUsers}>Delete</button>
     <button onClick={handleGetUsers}>Get Users</button>
     </>
   )
