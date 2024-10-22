@@ -25,15 +25,15 @@ const handleGetUsers = () => {
   })
 }
 
-// const handleDeleteUsers = () => {
-//   axios({
-//     method: 'delete',
-//     url: 'http://localhost:3002/DeleteUsers'
-//   })
-//   .then((res) => {
-//     console.log('res=', res)
-//   })
-// }
+const handleDeleteUsers = () => {
+  axios({
+    method: 'delete',
+    url: 'http://localhost:3002/DeleteUsers'
+  })
+  .then((res) => {
+    console.log('res=', res)
+  })
+}
 
 
 function App() {

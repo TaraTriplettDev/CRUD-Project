@@ -38,13 +38,13 @@ app.get("/GetUsers", (req, res) => {
     })
 })
 
-// app.delete("/DeleteUsers", (req, res) => {
-//     console.log("Users Deleted")
-//     User.find()
-//     .then(found => {
+app.delete("/DeleteUsers", (req, res) => {
+    console.log("Users Deleted")
+    User.find()
+    .then(found => {
         
-//     })
-// })
+    })
+})
 
 app.listen(port, () => {
     mongoose.connect(process.env.MONGO_URI).then(() => {
